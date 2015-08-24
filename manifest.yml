@@ -1,0 +1,14 @@
+---
+applications:
+- name: ED209-824-135637-app
+  services:
+    - ws-nhw-template-DataCache
+  memory: 128M
+  instances: 1
+  path: .
+  command: node app.js
+  host: ED209-824-135637-host
+declared-services:
+  ws-nhw-template-DataCache:
+    label: DataCache
+    plan: free
